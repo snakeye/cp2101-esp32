@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND" color="16" fill="1" visible="yes" active="yes"/>
@@ -148,8 +148,9 @@
 <wire x1="36" y1="2.5" x2="35" y2="3" width="0.1524" layer="22"/>
 <wire x1="36" y1="2.5" x2="35" y2="2" width="0.1524" layer="22"/>
 <text x="31.5" y="15.5" size="1.27" layer="21" font="vector">ESP01</text>
-<text x="10.5" y="1" size="2.1844" layer="22" font="vector" ratio="15" rot="MR90">USB - UART</text>
-<text x="8.5" y="1" size="1.27" layer="22" font="vector" rot="MR90">https://ovcharov.me</text>
+<text x="13.5" y="9.5" size="2.1844" layer="22" font="vector" ratio="15" rot="MR90" align="bottom-center">USB - UART</text>
+<text x="11.5" y="9.5" size="1.27" layer="22" font="vector" rot="MR90" align="bottom-center">https://ovcharov.me</text>
+<text x="4" y="9.5" size="1" layer="22" font="vector" rot="MR90" align="bottom-center">JLCJLCJLCJLC</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2021,25 +2022,26 @@ design rules under a new name.</description>
 <wire x1="19.75" y1="10.455" x2="19.8426" y2="10.5476" width="0.25" layer="1"/>
 <wire x1="19.8426" y1="10.5476" x2="19.8426" y2="11.41168125" width="0.25" layer="1"/>
 <wire x1="19.8426" y1="11.41168125" x2="21.53091875" y2="13.1" width="0.25" layer="1"/>
-<wire x1="25.36" y1="13.31" x2="27" y2="14.95" width="0.25" layer="1"/>
+<wire x1="25.15" y1="13.1" x2="27" y2="14.95" width="0.25" layer="1"/>
 <wire x1="21.53091875" y1="13.1" x2="25.15" y2="13.1" width="0.25" layer="1"/>
-<wire x1="32.73" y1="13.31" x2="25.36" y2="13.31" width="0.25" layer="1"/>
-<wire x1="25.36" y1="13.31" x2="25.15" y2="13.1" width="0.25" layer="1"/>
+<wire x1="32.73" y1="13.31" x2="28.64" y2="13.31" width="0.25" layer="1"/>
+<wire x1="28.64" y1="13.31" x2="27" y2="14.95" width="0.25" layer="1"/>
 </signal>
 <signal name="RST">
 <contactref element="T1" pad="3"/>
 <contactref element="JP2" pad="5"/>
 <contactref element="R10" pad="1"/>
-<wire x1="24.5" y1="6.9" x2="25.8577" y2="6.9" width="0.25" layer="1"/>
-<wire x1="25.8577" y1="6.9" x2="26.77885" y2="5.97885" width="0.25" layer="1"/>
 <contactref element="U$1" pad="P$4"/>
-<wire x1="26.77885" y1="5.97885" x2="26.7851" y2="5.9726" width="0.25" layer="1"/>
-<wire x1="30.4726" y1="5.9726" x2="32.73" y2="8.23" width="0.25" layer="1"/>
-<wire x1="26.7851" y1="5.9726" x2="30.4726" y2="5.9726" width="0.25" layer="1"/>
 <wire x1="23.15" y1="2.65" x2="23.95" y2="3.45" width="0.25" layer="1"/>
-<wire x1="23.95" y1="3.45" x2="26.5" y2="3.45" width="0.25" layer="1"/>
-<wire x1="26.5" y1="3.45" x2="26.77885" y2="3.72885" width="0.25" layer="1"/>
-<wire x1="26.77885" y1="3.72885" x2="26.77885" y2="5.97885" width="0.25" layer="1"/>
+<wire x1="23.95" y1="3.45" x2="26.4" y2="3.45" width="0.25" layer="1"/>
+<wire x1="26.4" y1="3.45" x2="26.5" y2="3.45" width="0.25" layer="1"/>
+<wire x1="26.77885" y1="3.72885" x2="26.5" y2="3.45" width="0.25" layer="1"/>
+<wire x1="32.73" y1="8.23" x2="28.8774" y2="4.3774" width="0.25" layer="1"/>
+<wire x1="28.8774" y1="4.3774" x2="28.1351" y2="4.3774" width="0.25" layer="1"/>
+<wire x1="27.2077" y1="3.45" x2="26.5" y2="3.45" width="0.25" layer="1"/>
+<wire x1="28.1351" y1="4.3774" x2="27.2077" y2="3.45" width="0.25" layer="1"/>
+<wire x1="24.5" y1="6.9" x2="26.4" y2="5" width="0.25" layer="1"/>
+<wire x1="26.4" y1="5" x2="26.4" y2="3.45" width="0.25" layer="1"/>
 </signal>
 <signal name="IO0">
 <contactref element="T2" pad="3"/>
